@@ -1,0 +1,16 @@
+{
+  "logisticsTasks": [
+    {
+      "id": 1,
+      "customerName": "John Doe",
+      "pickupLocation": "A",
+      "dropOffLocation": "B"
+    },
+    {
+      "id": 2,
+      "customerName": "Jane Doe",
+      "pickupLocation": "C",
+      "dropOffLocation": "D"
+    }
+  ]
+}
