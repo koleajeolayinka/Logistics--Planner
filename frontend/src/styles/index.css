@@ -114,3 +114,54 @@ header {
 .space-above {
     margin-top: 20px;
 }
+
+/* Form.css */
+
+.form-container {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #756565;
+    border-radius: 8px;
+    /* background-color: #f8f8f8; */
+    width: 50% ;
+    /* justify-content: center; */
+    /* justify-items: center; */
+}
+
+.customer-form {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.customer-form-field {
+    width: 40vw;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #756565;
+    border-radius: 4px;
+    outline: none;
+}
+
+.button {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 8vw;
+}
+
+button:hover {
+    background-color: #45a049;
+}

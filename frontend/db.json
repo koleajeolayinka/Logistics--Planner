@@ -8,15 +8,15 @@
     },
     {
       "id": 2,
-      "customerName": "Jane Doe",
+      "customerName": "Kole Doe",
       "pickupLocation": "C",
       "dropOffLocation": "D"
     },
     {
       "id": 3,
       "customerName": "tobi",
-      "pickupLocation": "rrr",
-      "dropOffLocation": "rrrr"
+      "pickupLocation": "Abode",
+      "dropOffLocation": "Ikeja"
     }
   ]
 }

@@ -6,8 +6,6 @@ Logistics Planner is a simple web application built with React that allows users
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Folder Structure](#folder-structure)
-- [Dependencies](#dependencies)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -16,12 +14,13 @@ Logistics Planner is a simple web application built with React that allows users
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/logistics-planner.git
+   git clone https://github.com/koleajeolayinka/Logistics--Planner
 
 2. **Navigate to the project folder:**
 
    ```bash
-    cd logistics-planner
+    cd logistics--planner/frontend
+    ```
   
 3. **Install dependencies:**
 
@@ -37,3 +36,10 @@ Logistics Planner is a simple web application built with React that allows users
     npm run dev
     ```
     This will start the React app on http://localhost:3000 and JSON-Server on http://localhost:3001.
+
+
+# Contributing
+Feel free to contribute to the project by creating issues or pull requests.
+
+# License
+This project is licensed under the MIT License.
