@@ -1,43 +1,41 @@
 // router.js
 const express = require("express");
 const User = require("../schema/user.js");
-
 const router = express.Router();
 
-router.post("/users", async (req, res) => {
-  const { customerName, pickupLocation, dropOffLocation } = req.body;
+// Create a user
+
+router.post("/userData", async (req, res) => {
+  const data = new User({
+    customerName: req.body.customerName,
+    pickupLocation: req.body.pickupLocation,
+    dropOffLocation: req.body.dropOffLocation,
+  });
 
   try {
-    console.log("Received data:", {
-      customerName,
-      pickupLocation,
-      dropOffLocation,
-    });
-
-    const user = new User({ customerName, pickupLocation, dropOffLocation });
-    const savedUser = await user.save(); // Use await here
-
-    console.log("User saved:", savedUser);
-
-    res.send(savedUser);
+    const savedData = await data.save();
+    res.status(200).json(savedData);
+    console.log("Received data:", savedData);
   } catch (error) {
+    res.status(400).json({ message: error.message });
     console.error(error);
-    res.status(500).send(error);
   }
 });
 
 // Get all users
 
-router.get("/users", async (req, res) => {
+
+router.get("/getUsers", async (req, res) => {
   try {
-    const users = await User.find({});
+    const users = await User.findById(req.params.id);
+    res.json(users);
     console.log("Users data:", users); // Log the data
-    res.send(users);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+
 
 // Update a user
 router.put("/users/:id", async (req, res) => {
